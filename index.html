@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ifron Store - Shop Electronics, Fashion, and More</title>
+  <title>Ifron Store - Place Order</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -17,18 +17,23 @@
     </nav>
   </header>
 
-  <section id="hero">
-    <h1>Welcome to Ifron Store</h1>
-    <p>Explore a wide range of products</p>
-  </section>
-
-  <section id="categories">
-    <h2>Shop by Categories</h2>
-    <div class="category-list">
-      <div class="category-item"><a href="product.html?category=electronics">Electronics</a></div>
-      <div class="category-item"><a href="product.html?category=fashion">Fashion</a></div>
-      <div class="category-item"><a href="product.html?category=home-kitchen">Home & Kitchen</a></div>
-    </div>
+  <section id="order-form">
+    <h2>Place Your Order</h2>
+    <form id="order-form">
+      <label for="product">Product:</label>
+      <input type="text" id="product" name="product" required>
+      
+      <label for="customer-name">Customer Name:</label>
+      <input type="text" id="customer-name" name="customer-name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="total-amount">Total Amount ($):</label>
+      <input type="number" id="total-amount" name="total-amount" required>
+      
+      <button type="submit">Place Order</button>
+    </form>
   </section>
 
   <footer>
